@@ -2,11 +2,11 @@
 using Microsoft.ServiceBus;
 using Microsoft.ServiceBus.Messaging;
 
-namespace ServiceBusSessionQueue
+namespace SessionQueueProcessor
 {
     class Program
     {
-        private static readonly string sbConnectionString = "Endpoint=sb://testsessionsbus.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=nAcvTL2QX7oC1wzuwWeTjc2armGgazuez9QmJmNl0IY=";
+        private static readonly string sbConnectionString = "Replace-RootManageSharedAccessKey-ConnectionString";
         private static readonly string queueName = "fifotest";
 
         static void Main(string[] args)
@@ -18,6 +18,8 @@ namespace ServiceBusSessionQueue
 
             // Process messages from Service Bus Queue 
             ReadMessageWithSessionHandler();
+
+            Console.ReadKey();
 
         }
 
