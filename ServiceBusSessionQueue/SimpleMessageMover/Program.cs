@@ -23,9 +23,9 @@ namespace SimpleMessageMover
             try
             {
                 // TODO - Update connection string before you run this console app 
-                var sourceQueueConnectionString = "Endpoint=sb://sessionqueuetest.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=6mUVVSe/NMWHkuGWbGu4oa81sw+0Eooq1hO84NMrWoE=";
+                var sourceQueueConnectionString = "Endpoint=sb://sessionqueuetest.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=XXXXX";
                 var sourceQueueEntityPath = "SourceQ";
-                var destQueueConnectionString = "Endpoint=sb://sessionqueuetest.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=6mUVVSe/NMWHkuGWbGu4oa81sw+0Eooq1hO84NMrWoE=";
+                var destQueueConnectionString = "Endpoint=sb://sessionqueuetest.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=XXXXX";
                 var destQueueEntityPath = "DestQ";
 
                 // Create Queue client for source queue (From which we need to read the messages)
